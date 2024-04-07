@@ -8,7 +8,7 @@ Having been a software engineer years ago, I'm embarking on a journey to re-ente
 
 ## Project Overview
 
-FloresQL is not just a website; it's a representation of my journey, skills, and projects. Here's a brief overview of what you'll find:
+floresql is a representation of my journey, skills, and projects. Here's a brief overview of what you'll find:
 
 - **Portfolio**: A collection of my past projects, including descriptions, technologies used, and links to their repositories or live demos.
 - **Resume**: A detailed overview of my professional experience, skills, education, and certifications.
