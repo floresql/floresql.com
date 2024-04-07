@@ -1,6 +1,6 @@
-# Welcome to FloresQL.com
+# Welcome to floresql.com
 
-Hey there! Welcome to my personal portfolio and resume website, [FloresQL.com](https://floresql.com). 
+Hey there! Welcome to my personal portfolio and resume website, [floresql.com](https://floresql.com). 
 
 ## About
 
@@ -17,7 +17,7 @@ FloresQL is not just a website; it's a representation of my journey, skills, and
 
 ## Technologies Used
 
-While I'm still learning and adapting to new technologies, here are some of the key technologies and tools used in building FloresQL:
+While I'm still learning and adapting to new technologies, here are some of the key technologies and tools used in building floresql:
 
 - HTML5
 - CSS3
@@ -40,4 +40,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Thank you for visiting FloresQL! Explore my portfolio, connect with me, and let's build amazing things together.
+Thank you for visiting floresql! Explore my portfolio, connect with me, and let's build amazing things together.
