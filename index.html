@@ -12,25 +12,21 @@
     <!-- Fav Icon -->
     <link rel="shortcut icon" href="favicon.ico">  
 
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <!-- Google CSS -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
 
-    <!-- Github Calendar CSS -->
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css"> 
 
-    <!-- Github Activity CSS -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
-
-    <!-- Theme CSS -->  
+    <!-- Main CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-
-    <!-- FontAwesome JS -->
-    <script defer src="assets/fontawesome/js/all.js"></script>
 </head> 
 
 <body>
@@ -43,9 +39,16 @@
 		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
 		            <div class="profile-content">
 		                <h1 class="name">Guillermo E. Flores</h1>
-		                <h2 class="desc">Diverse Skills, Unified Solutions.</h2> 
-                        <!-- Socials -->   
-		                <ul class="social list-inline">		                    
+		                <h2 class="desc"><span id="element"></span></h2> 
+                        <!-- Setup and start animation! -->
+                        <script>
+                            var typed = new Typed('#element', {
+                            strings: ['Software Engineering', 'Data Analysis', 'Business Intelligence', 'Financial Management', 'Diverse Skills, Unified Solutions'],
+                            typeSpeed: 50,
+                            });
+                        </script>
+                        <!-- Links -->   
+		                <ul class="links list-inline">		                    
 		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/floresql/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 		                    <li class="list-inline-item"><a href="https://github.com/floresql" target="_blank"><i class="fab fa-github-alt"></i></a></li>    
 		                    <li class="list-inline-item"><a href="https://stackoverflow.com/users/24065195/floresql" target="_blank"><i class="fab fa-stack-overflow"></i></a></li> 
@@ -63,7 +66,6 @@
 						</div>
 			        </div>
                     <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script>
-                     
 	            </div>
 	        </div>      
         </div>
@@ -71,7 +73,7 @@
 
     <!-- Page Body --> 
     <div class="container sections-wrapper py-5">
-        <div class="row">
+        <div class="row"> 
             <!-- Primary Column --> 
             <div class="primary col-lg-8 col-12">
                 <!-- About Section --> 
@@ -84,6 +86,25 @@
                         </div>
                     </div>              
                 </section>
+
+                <!-- Skills Section -->
+                <section class="skills section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Intro about your skills goes here. Keep the list lean and only show your primary skillset. You can always provide a link to your Linkedin or Github profile so people can get more info there.</p>
+                            
+                            <div class="skillset">
+                               
+                                
+                                
+                                <p><a class="more-link" href="#"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
             </div>
             <!-- Secondary Column --> 
             <div class="secondary col-lg-4 col-12">
@@ -109,16 +130,13 @@
 
 
 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <!-- Plugin Javascript -->          
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
-    <!-- Github Calendar Plugin -->
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- Github Activity Plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- Custom JS -->
+
+    <!-- Main JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>   
+
 </body>
 </html>

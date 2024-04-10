@@ -1,10 +1,7 @@
 /*!   
- * Template Name: Developer - Portfolio Landing Page Bootstrap 5 Template for Developers
- * Version: Bootstrap 5 v3.0
- * Author: Xiaoying Riley
- * Twitter: @3rdwave_themes
- * Copyright: 3rd Wave Media Ltd.
- * Website: https://themes.3rdwavemedia.com/
+ * Author: Guillermo E. Flores
+ * Twitter: 
+ * Website: https://www.floresql.com/
 */
 body {
   font-family: 'Lato', arial, sans-serif;
@@ -23,16 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
   color: #479fc8;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #2d844e;
+  color: #434343;
 }
 
 a:focus {
@@ -40,10 +33,6 @@ a:focus {
 }
 
 .btn, a.btn {
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
   font-family: 'Montserrat', arial, sans-serif;
   padding: 8px 16px;
   font-weight: bold;
@@ -65,20 +54,6 @@ a:focus {
 }
 
 a.btn-cta-primary, .btn-cta-primary {
-  background: #54ba4e;
-  border: 1px solid #54ba4e;
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-a.btn-cta-primary:hover, .btn-cta-primary:hover {
-  background: #49ac43;
-  border: 1px solid #49ac43;
-  color: #fff;
-}
-
-a.btn-cta-secondary, .btn-cta-secondary {
   background: #479FC8;
   border: 1px solid #479FC8;
   color: #fff;
@@ -86,11 +61,10 @@ a.btn-cta-secondary, .btn-cta-secondary {
   text-transform: uppercase;
 }
 
-a.btn-cta-secondary:hover, a.btn-cta-secondary:not(:disabled):not(.disabled):active:focus, .btn-cta-secondary:hover, .btn-cta-secondary:not(:disabled):not(.disabled):active:focus {
+a.btn-cta-primary:hover, .btn-cta-primary:hover {
   background: #3893bd;
   border: 1px solid #3893bd;
   color: #fff;
-  box-shadow: none;
 }
 
 .text-highlight {
@@ -121,7 +95,6 @@ a.dotted-link:hover {
 .header {
   padding: 30px 0;
   background: #f5f5f5;
-  border-top: 10px solid #778492;
 }
 
 .header .btn {
@@ -148,7 +121,7 @@ a.dotted-link:hover {
   margin-bottom: 15px;
 }
 
-.header .profile-content .social a {
+.header .profile-content .links a {
   background: #b0b7bf;
   width: 36px;
   height: 36px;
@@ -161,11 +134,11 @@ a.dotted-link:hover {
   text-align: center;
 }
 
-.header .profile-content .social a:hover {
+.header .profile-content .links a:hover {
   background: #778492;
 }
 
-.header .profile-content .social a .svg-inline--fa {
+.header .profile-content .links a .svg-inline--fa {
   font-size: 20px;
   margin-top: 8px;
 }
@@ -444,46 +417,6 @@ a.dotted-link:hover {
   top: 0;
 }
 
-/* Testimonials section */
-.testimonials .item {
-  margin-bottom: 30px;
-}
-
-.testimonials .item:last-child {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote {
-  color: #666;
-  font-size: 16px;
-  border-left: 5px solid #9fdeb7;
-  padding: 5px 15px;
-  margin-bottom: 15px;
-}
-
-.testimonials .item .quote p {
-  margin-bottom: 0;
-}
-
-.testimonials .item .quote .svg-inline--fa {
-  color: #79d19a;
-  margin-right: 15px;
-}
-
-.testimonials .item .source {
-  font-size: 14px;
-  padding-left: 20px;
-  font-weight: 500;
-}
-
-.testimonials .item .source .name {
-  color: #939ea9;
-  font-weight: 600;
-}
-
-.testimonials .item .source .title {
-  color: #999;
-}
 
 /* Education section */
 .education .item {
@@ -576,37 +509,6 @@ a.dotted-link:hover {
   color: #49515a;
 }
 
-/* Credits */
-.credits ul li {
-  margin-bottom: 10px;
-}
-
-.credits ul li .svg-inline--fa {
-  margin-right: 5px;
-  position: relative;
-  top: -2px;
-}
-
-.credits ul li a {
-  color: #778492;
-}
-
-.credits ul li a .svg-inline--fa {
-  color: #b0b7bf;
-}
-
-.credits ul li a:hover {
-  color: #49515a;
-}
-
-.credits .btn {
-  margin-bottom: 15px;
-}
-
-.aside .subheading {
-  font-size: 18px;
-  color: #545e69;
-}
 
 /* ======= Footer ======= */
 .footer {
@@ -664,7 +566,7 @@ body[data-theme="dark"] {
 }
 
 body[data-theme="dark"] a:hover {
-  color: #53c47d;
+  color: #479fc8;
 }
 
 body[data-theme="dark"] a.btn:hover {
@@ -672,7 +574,7 @@ body[data-theme="dark"] a.btn:hover {
 }
 
 body[data-theme="dark"] .dark-mode-switch .form-check-input:focus {
-  border-color: #54ba4e;
+  border-color: #479fc8;
 }
 
 body[data-theme="dark"] .header {
@@ -689,12 +591,12 @@ body[data-theme="dark"] .header .profile-content .desc {
   color: rgba(255, 255, 255, 0.7);
 }
 
-body[data-theme="dark"] .header .profile-content .social a {
+body[data-theme="dark"] .header .profile-content .links a {
   background: #2e3238;
   color: rgba(230, 230, 230, 0.7);
 }
 
-body[data-theme="dark"] .header .profile-content .social a:hover {
+body[data-theme="dark"] .header .profile-content .links a:hover {
   color: rgba(255, 255, 255, 0.9);
 }
 
