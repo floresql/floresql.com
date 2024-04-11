@@ -160,6 +160,20 @@ a.dotted-link:hover {
   font-size: 24px;
 }
 
+.section .heading-icon {
+  border-radius:50%;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  width:38px;
+  height:38px;
+  padding-left:.15rem;
+  background:#545e69;
+  font-size:1.125rem;
+  color:#d7dde9;
+}
+
 .section .content .more-link .svg-inline--fa {
   margin-right: 5px;
   font-size: 14px;
@@ -299,7 +313,59 @@ a.dotted-link:hover {
   color: #5f6b77;
 }
 
-/* Work Section */
+/* Work Section ***********************************************************************/
+
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #479FC8;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #479FC8;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
+}
+
+
+
 .experience .item {
   margin-bottom: 30px;
 }
@@ -506,7 +572,7 @@ a.dotted-link:hover {
 }
 
 .list ul li a:hover {
-  color: #49515a;
+  color: #479FC8;
 }
 
 
