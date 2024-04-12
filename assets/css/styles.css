@@ -72,8 +72,8 @@ a.btn-cta-primary:hover, .btn-cta-primary:hover {
 }
 
 .badge-theme {
-  background: #479fc8;
-  font-size: 12px;
+  background: #434343;
+  font-size: 14px;
   color: #fff;
   border-radius: 2px;
   -moz-background-clip: padding;
@@ -135,7 +135,7 @@ a.dotted-link:hover {
 }
 
 .header .profile-content .links a:hover {
-  background: #778492;
+  background: #3893bd;
 }
 
 .header .profile-content .links a .svg-inline--fa {
@@ -314,8 +314,6 @@ a.dotted-link:hover {
 }
 
 /* Work Section ***********************************************************************/
-
-
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -361,38 +359,7 @@ a.dotted-link:hover {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #0563bb;
-}
-
-
-
-.experience .item {
-  margin-bottom: 30px;
-}
-
-.experience .item .title {
-  font-size: 16px;
-  margin-top: 0;
-  margin-bottom: 5px;
-  line-height: 1.5;
-}
-
-.experience .item .title .place {
-  color: #999;
-  font-weight: normal;
-}
-
-.experience .item .title .place a {
-  color: #999;
-}
-
-.experience .item .title .place a:hover {
-  color: #666666;
-}
-
-.experience .item .title .year {
-  color: #999;
-  font-weight: normal;
+  border: 2px solid #479FC8;
 }
 
 /* Git section */
@@ -575,6 +542,10 @@ a.dotted-link:hover {
   color: #479FC8;
 }
 
+.list-icons {
+  font-size: 3rem; }
+  .list-icons .list-inline-item i:hover {
+    color: #479FC8; }
 
 /* ======= Footer ======= */
 .footer {
@@ -663,7 +634,7 @@ body[data-theme="dark"] .header .profile-content .links a {
 }
 
 body[data-theme="dark"] .header .profile-content .links a:hover {
-  color: rgba(255, 255, 255, 0.9);
+  color: #479fc8;
 }
 
 body[data-theme="dark"] .section .section-inner {
