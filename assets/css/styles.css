@@ -73,7 +73,7 @@ a.btn-cta-primary:hover, .btn-cta-primary:hover {
 
 .badge-theme {
   background: #434343;
-  font-size: 14px;
+  font-size: 14 px;
   color: #fff;
   border-radius: 2px;
   -moz-background-clip: padding;

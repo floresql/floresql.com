@@ -16,6 +16,10 @@
     <script defer src="assets/fontawesome/js/all.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+    <!-- Github Activity JS -->
+    <script type="text/javascript" src="node_modules/mustache/mustache.min.js"></script>
+    <script type="text/javascript" src="node_modules/github-activity-feed/src/github-activity.js"></script>
+
     <!-- Google CSS -->
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
@@ -23,12 +27,21 @@
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
     <link rel="stylesheet" href="assets/plugins/bootstrap-icons/bootstrap-icons.css"> 
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css"> 
     <link rel="stylesheet" href="assets/plugins/devicons/css/devicons.min.css">
-
+    <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
+    <link rel="stylesheet" href="node_modules/github-activity-feed/src/github-activity.css">
+    
     <!-- Main CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+    <script>
+        GitHubActivity.feed({
+        username: "floresql",
+        selector: "#feed",
+        limit: 20, // optional
+        });
+    </script>
+
 </head> 
 
 <body>
@@ -83,9 +96,9 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading"><!--<i class="heading-icon bi bi-person"></i>--> About Me</h2>
                         <div class="content">
-                            <p>I'm someone who's worn multiple hats in my career. Starting as a full-stack software engineer, my fascination with backend databases and SQL unexpectedly led me down the path of data analysis, business intelligence, and eventually financial management. Although, I always manage to find a way to use my dev skills whenever possible.</p>
-                            <p>While my journey has been fulfilling, there's always been a part of me that missed the thrill of creating solutions through software engineering. To prepare for my return, I've been actively engaging in certificate programs to learn new technologies, diving into cutting-edge tools and methodologies. </p>
-                            <p>Armed with a wealth of experience and a hunger for newfound knowledge, I'm ready to embark on this journey back to my roots in software engineering. I'm eager to collaborate, innovate, and contribute to projects that make a real difference. So, let's connect and embark on this exciting journey together!</p>
+                            <p>The story of my career starts in the trenches of tech support, fixing issues like a digital superhero. From there, I leveled up to become a full-stack developer, juggling front-end and back-end like a pro. From there I took my DBMS and SQL skills to dive into data analysis, business intelligence, and even taken a detour into business planing & analysis!</p>
+                            <p>But here's the deal: All along there was this little voice inside me whispering, "Hey, remember the good ol' days of coding?" Yeah, I missed the thrill of solving problems with lines of code. So, I've been hitting the books, diving into certificate programs, learning all the latest tech, and gearing up for a comeback to my software engineering roots.</p>
+                            <p>Armed with a wealth of experience and a hunger for more knowledge, I'm itching to dive back into the coding fray. Let's team up, brainstorm some killer ideas, and make some serious software magic happen. Who's with me? Let's make software history together!</p>
                         </div>
                     </div>              
                 </section>
@@ -93,11 +106,26 @@
                 <!-- Resume Section 1 -->
                 <section class="education section resume">
                     <div class="section-inner shadow-sm rounded">
-                        <h2 class="heading">Education & Training</h2>
+                        <h2 class="heading">Certifications</h2>
+                        <div class="resume-item">
+                            <h4>Meta Front-End Developer Professional Certificate</h4>
+                            <p>Coursera</p>
+                            <ul class="links list-inline">
+                                <li class="list-inline-item"><span class="badge badge-theme">HTML</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">CSS</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Javascript</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"></span></li>
+                            </ul>
+                        </div>
                         <div class="resume-item">
                             <h4>Meta Back-End Developer Professional Certificate</h4>
                             <p>Coursera</p>
-                            <ul class="list-inline">
+                            <ul class="links list-inline">
                                 <li class="list-inline-item"><span class="badge badge-theme">HTML</span></li>
                                 <li class="list-inline-item"><span class="badge badge-theme">CSS</span></li>
                                 <li class="list-inline-item"><span class="badge badge-theme">Javascript</span></li>
@@ -118,35 +146,65 @@
                                 <li class="list-inline-item"><span class="badge badge-theme">Data Cleansing</span></li>
                                 <li class="list-inline-item"><span class="badge badge-theme">DBMS</span></li>
                                 <li class="list-inline-item"><span class="badge badge-theme">Iteration</span></li>
-                                <li class="list-inline-item last-item"><span class="badge badge-theme">Stories</span></li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Master of Business Administration, Data Analytics</h4>
-                            <p>Saint Leo University</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><span class="badge badge-theme">Data Analysis</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Data Collection</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Data Visualization</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Data Mining</span></li>
-                                <li class="list-inline-item last-item"><span class="badge badge-theme">Business Decision Making</span></li>
-                            </ul>
-                        </div>
-                        <div class="resume-item">
-                            <h4>Bachelor of Science, Computer Information Systems</h4>
-                            <p>Saint Leo University</p>
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><span class="badge badge-theme">Programming</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Project Management</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Information Security</span></li>
-                                <li class="list-inline-item"><span class="badge badge-theme">Systems Analysis</span></li>
-                                <li class="list-inline-item last-item"><span class="badge badge-theme">Internet Applications</span></li>
+                                <li class="list-inline-item last-item"><span class="badge badge-theme">Data Stories</span></li>
                             </ul>
                         </div>
                     </div>                
                 </section>
 
                 <!-- Resume Section 2 -->
+                <section class="education section resume">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="resume-item">
+                            <h4>Master of Science, Software Engineering</h4>
+                            <p>Regis University <i>(Enrolled)</i></p>
+                            <ul class="links list-inline">
+                                <li class="list-inline-item"><span class="badge badge-theme">HTML</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">CSS</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Javascript</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">DOM</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">jQuery</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">AngularJS</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">AJAX </span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">React Native</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Agile</span></li> 
+                                <li class="list-inline-item"><span class="badge badge-theme">SDLC</span></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Master of Business Administration, Data Analytics</h4>
+                            <p>Saint Leo University</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><span class="badge badge-theme">Analysis</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Data Management</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Visualization</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Data Mining</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">ETL</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">KPIs</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Accounting</span></li>
+                                <li class="list-inline-item last-item"><span class="badge badge-theme">Management</span></li>
+                            </ul>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Bachelor of Science, Computer Information Systems</h4>
+                            <p>Saint Leo University</p>
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><span class="badge badge-theme">HTML</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">JavaScript</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">SQL</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">DBMS</span></li>
+                                <li class="list-inline-item last-item"><span class="badge badge-theme">C++</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme"> Systems Analysis</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Networking </span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Security</span></li>
+                                <li class="list-inline-item"><span class="badge badge-theme">Operating Systems</span></li>
+                            </ul>
+                        </div>
+                    </div>                
+                </section>
+
+                <!-- Resume Section 3 -->
                 <section class="experience section resume">
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Professional Experience</h2>
@@ -183,6 +241,7 @@
                     </div>                
                 </section>
             </div>
+
             <!-- Secondary Column --> 
             <div class="secondary col-lg-4 col-12">
                 <!-- Info Section  --> 
@@ -192,8 +251,8 @@
                        <div class="content">
                            <ul class="list-unstyled">
                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>St Petersburg, FL</li>
-                               <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">contactme@floresql.com</a></li>
-                               <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">https://www.floresql.com</a></li>
+                               <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto: contactme@floresql.com">contactme@floresql.com</a></li>
+                               <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://www.floresql.com">www.floresql.com</a></li>
                            </ul>
                        </div>
                    </div>              
@@ -246,6 +305,15 @@
                         </div>
                     </div>              
                 </aside>
+                <!-- Github Section -->
+                <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Github Activity</h2>
+                        <div id="feed"></div>
+                        <p> </p>
+                        <p><a class="more-link" href="https://github.com/floresql"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
+                    </div>              
+                </aside>
                 <!-- Languages Section  --> 
                 <aside class="info aside section">
                     <div class="section-inner shadow-sm rounded">
@@ -269,8 +337,8 @@
                     <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Interests</h2>
                         <div class="content">
-                            <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                            <p>When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+                            <p>When I'm not coding, you'll often find me spending quality time with my family and exploring the world through travel, Whether it's a weekend getaway to a nearby city or a longer journey to immerse ourselves in different cultures. </p>
+                            <p>Family time is precious to me, so I prioritize activities like game nights, going to the kids sporting events, and simply enjoying each other's company. Traveling allows me to unwind, gain new perspectives, and recharge my creativity, which ultimately enhances my work as a software engineer.</p>
                         </div>
                     </div>              
                 </aside>
@@ -280,10 +348,11 @@
                         <h2 class="heading">Recent Coding Music</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Ut sollicitudin in mauris non auctor</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Etiam hendrerit urna nunc</a></li>
-                                <li><i class="fas fa-headphones"></i> <a href="#">Duis et felis bibendum</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/5v0pgAk9hHvQ1S7JdjBjjN?si=d6a4cce67da24931">Maslow's Hierarchy of Beats</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/3R7bfoEKPkxaukeC3ZSn4o?si=6c81dfadecb44b8a">The Eraser: Black Swan</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/track/3b2HJqz1Ah4hgdPkIztQZ5?si=3db964801a544748">No Way, Get Real: Pitches Love Me</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/37i9dQZF1EIgxoKbMD2OOc?si=b96055bfb71743f5">Coding Jazz</a></li>
+                                <li><i class="fas fa-headphones"></i> <a href="https://open.spotify.com/playlist/26uYEVBt5ZdXYhASRHchKZ?si=b4d2b317929043c3">Developer's Domain</a></li>
                             </ul>   
                         </div>
                     </div>              
@@ -299,8 +368,7 @@
 
     <!-- Plugin Javascript -->          
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    
 
     <!-- Main JS -->
     <script type="text/javascript" src="assets/js/main.js"></script>   
