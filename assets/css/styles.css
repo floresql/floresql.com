@@ -270,10 +270,7 @@ a.dotted-link:hover {
   text-transform: uppercase;
   color: #fff;
   background-color: #479FC8;
-  -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
-  -moz-transform: rotate(45deg) translate3d(0, 0, 0);
-  -ms-transform: rotate(45deg) translate3d(0, 0, 0);
-  -o-transform: rotate(45deg) translate3d(0, 0, 0);
+
 }
 
 .latest .has-ribbon .ribbon .text:before, .latest .has-ribbon .ribbon .text:after {
