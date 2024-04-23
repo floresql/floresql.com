@@ -23,7 +23,7 @@ While I'm still learning and adapting to new technologies, here are some of the 
 - CSS3
 - JavaScript
 - Bootstrap
-- NPM
+- npm
 - Github
 - VS Code
 - Photoshop
