@@ -544,26 +544,7 @@ a.dotted-link:hover {
   .list-icons .list-inline-item i:hover {
     color: #479FC8; }
 
-/* ======= Footer ======= */
-.footer {
-  background: #32383e;
-  color: #fff;
-  padding: 10px 0;
-}
-
-.footer .copyright {
-  line-height: 1.6;
-  color: #a1aab4;
-  font-size: 14px;
-}
-
-.footer a {
-  color: #fff;
-}
-
-.footer .fa-heart {
-  color: #fb866a;
-}
+/* ======= Dark Mode ======= */
 
 .dark-mode-switch {
   margin-bottom: 1rem;
