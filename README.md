@@ -6,7 +6,7 @@ Hey there! Welcome to my personal portfolio and resume website, [floresql.com](h
 
 Having been a software engineer years ago, I'm embarking on a journey to re-enter the world of software engineering. After a pivot more into the business side of things, I'm getting back into the tech world, eager to explore new technologies and methodologies. This website will not only serve as a platform to showcase my skills, it will also be a platform where I can document my journey of learning and growth as I explore and adapt to new technologies and industry trends in the field of software engineering.
 
-# Project Overview
+## Project Overview
 
 **floresql** is a representation of my journey, skills, and projects. Here's a brief overview of what you'll find:
 
