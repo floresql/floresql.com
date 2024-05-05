@@ -8,8 +8,13 @@ body {
   color: #434343;
   background: #DAE3E7;
   font-size: 16px;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body>div {
+  overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -742,5 +747,6 @@ body[data-theme="dark"] .text-muted {
   .container {
     width: 1360px;
     max-width: inherit;
+    overflow: hidden;
   }
 }
